@@ -36,3 +36,42 @@ e após
 $ yarn start
 
 ```
+### Uso da API
+
+## Criar um Funcionário
+Endpoint: POST /employees
+
+Exemplo de Requisição:
+```bash
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+  "name": "João Silva",
+  "score": 15,
+  "role": "Desenvolvedor"
+}
+```
+
+## Atualizar um Funcionário
+Endpoint: PUT /employees/:id
+
+Exemplo de Requisição:
+```bash
+PUT http://localhost:3000/employees/ID_DO_FUNCIONARIO
+Content-Type: application/json
+
+{
+  "name": "João Silva",
+  "score": 25,
+  "role": "Desenvolvedor"
+}
+```
+
+## Buscar um Funcionário
+Endpoint: GET /employees/:id
+
+Exemplo de Requisição:
+```bash
+GET http://localhost:3000/employees/ID_DO_FUNCIONARIO
+```
