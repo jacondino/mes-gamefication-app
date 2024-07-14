@@ -64,7 +64,7 @@ export class EmployeeService {
       return 19;
     } else if (score >= 10 && score < 20) {
       return 4;
-    } else if (score >= 20 && score < 30) {
+    } else if (score >= 20) {
       return 6;
     }
   }
